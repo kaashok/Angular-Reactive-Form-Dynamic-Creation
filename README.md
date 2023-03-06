@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
+In this project, We are going to explore, how to create reactive form dynamically based on the json.
+
+Eg: sample json
+
+`{
+    empName: {
+      name: 'Employee Name',
+      validators: [Validators.required]
+    },
+    empEmailId: {
+      name: 'Employee Email Id',
+      validators: [Validators.required, Validators.email]
+    }
+}`
+
+Based on the above json, we are going to create form controls. Please refer [dynamic-mat-form-creation.component.html](https://github.com/kaashok/Dynamic--Angular-Reactive-Form-Creation/blob/main/src/app/components/dynamic-mat-form-creation/dynamic-mat-form-creation.component.html) and [dynamic-mat-form-creation.component.ts](https://github.com/kaashok/Dynamic--Angular-Reactive-Form-Creation/blob/main/src/app/components/dynamic-mat-form-creation/dynamic-mat-form-creation.component.ts) file.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
